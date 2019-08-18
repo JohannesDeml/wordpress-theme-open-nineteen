@@ -3712,7 +3712,7 @@ body.page .main-navigation {
     padding: 3rem 0;
   }
   .site-header.featured-image {
-    min-height: 100vh;
+    min-height: 50vh;
     margin-bottom: 3rem;
   }
 }
