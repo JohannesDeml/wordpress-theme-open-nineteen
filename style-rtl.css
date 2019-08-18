@@ -2669,6 +2669,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   background: #fff;
   border: solid 1px #ccc;

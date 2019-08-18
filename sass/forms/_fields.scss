@@ -14,6 +14,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	background: $color__background-input;
 	border: solid 1px $color__border;
