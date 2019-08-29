@@ -162,3 +162,21 @@ blockquote {
 		hyphens: none;
 	}
 }
+
+.dark-background {
+	color: $color__text-bright;
+	background-color: rgba(0,0,0,0.92);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 2%, rgba(0,0,0,0.9) 7%, rgba(0,0,0,0.9) 93%, rgba(0,0,0,0.95) 98%, rgba(0,0,0,1) 100%); 
+
+}
+
+.project-info {
+	line-height: 1.1em;
+	table, th, td {
+		border-style: none;
+	}
+
+	th, td {
+		vertical-align: top;
+	}
+}

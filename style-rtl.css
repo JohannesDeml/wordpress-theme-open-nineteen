@@ -2392,6 +2392,20 @@ blockquote {
   }
 }
 
+.dark-background {
+  color: #EEE;
+  background-color: rgba(0, 0, 0, 0.92);
+  background: linear-gradient(-180deg, black 0%, rgba(0, 0, 0, 0.95) 2%, rgba(0, 0, 0, 0.9) 7%, rgba(0, 0, 0, 0.9) 93%, rgba(0, 0, 0, 0.95) 98%, black 100%);
+}
+
+.project-info table, .project-info th, .project-info td {
+  border-style: none;
+}
+
+.project-info th, .project-info td {
+  vertical-align: top;
+}
+
 p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3748,10 +3762,10 @@ body.page .main-navigation {
   box-sizing: content-box;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   overflow: hidden;
-  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-out;
 }
 
 .site-logo .custom-logo-link .custom-logo {
@@ -3759,7 +3773,7 @@ body.page .main-navigation {
 }
 
 .site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
-  box-shadow: 0 0 0 2px black;
+  box-shadow: 0 0 0 3px #005177;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4899,7 +4913,7 @@ body.page .main-navigation {
   .archive .page-header,
   .search .page-header,
   .error404 .page-header {
-    margin: 0 calc(10% + 60px) calc(10% + 60px);
+    margin: 0 calc(10% + 60px);
   }
 }
 
