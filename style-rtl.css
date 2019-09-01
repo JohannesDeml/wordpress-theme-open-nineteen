@@ -2395,15 +2395,23 @@ blockquote {
 .dark-background {
   color: #EEE;
   background-color: rgba(0, 0, 0, 0.92);
-  background: linear-gradient(-180deg, black 0%, rgba(0, 0, 0, 0.95) 2%, rgba(0, 0, 0, 0.9) 7%, rgba(0, 0, 0, 0.9) 93%, rgba(0, 0, 0, 0.95) 98%, black 100%);
+  background: linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.85) 2%, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.8) 93%, rgba(0, 0, 0, 0.85) 98%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.project-info table, .project-info th, .project-info td {
-  border-style: none;
+.project-info {
+  line-height: 1.1em;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
 }
 
-.project-info th, .project-info td {
-  vertical-align: top;
+.project-info h1, .project-info h2, .project-info h3 {
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+}
+
+.project-info h4, .project-info h5, .project-info h6 {
+  font-size: 1em;
+  letter-spacing: 0.05em;
 }
 
 p {
@@ -4114,8 +4122,8 @@ body.page .main-navigation {
 		 * Add a transition to the readability overlay, to add a subtle
 		 * but smooth effect when resizing the screen.
 		 */
-  transition: opacity 1200ms ease-in-out;
-  opacity: 0.7;
+  transition: opacity 1800ms ease-in-out;
+  opacity: 0.35;
   z-index: 5;
   /* When image filters are active, a blue overlay is added. */
 }
