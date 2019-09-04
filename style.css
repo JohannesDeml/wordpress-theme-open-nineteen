@@ -2392,28 +2392,6 @@ blockquote {
   }
 }
 
-.dark-background {
-  color: #EEE;
-  background-color: rgba(0, 0, 0, 0.92);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.85) 2%, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.8) 93%, rgba(0, 0, 0, 0.85) 98%, rgba(0, 0, 0, 0.9) 100%);
-}
-
-.project-info {
-  line-height: 1.1em;
-  letter-spacing: 0.1em;
-  font-size: 0.8em;
-}
-
-.project-info h1, .project-info h2, .project-info h3 {
-  font-size: 1.25em;
-  letter-spacing: 0.05em;
-}
-
-.project-info h4, .project-info h5, .project-info h6 {
-  font-size: 1em;
-  letter-spacing: 0.05em;
-}
-
 p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6184,6 +6162,52 @@ body.page .main-navigation {
 .entry .entry-content .has-white-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-white-color {
   color: #FFF;
+}
+
+.dark-background {
+  color: #EEE;
+  background-color: rgba(0, 0, 0, 0.92);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.85) 2%, rgba(0, 0, 0, 0.8) 7%, rgba(0, 0, 0, 0.8) 93%, rgba(0, 0, 0, 0.85) 98%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.project-info {
+  line-height: 1.1em;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
+.project-info h1, .project-info h2, .project-info h3 {
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+}
+
+.project-info h4, .project-info h5, .project-info h6 {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+ul.list-style-none {
+  list-style-type: none;
+  font-weight: 700;
+  padding-left: 0rem;
+}
+
+ul.list-style-none li {
+  line-height: 1.6;
+}
+
+ul.list-style-none ul {
+  list-style-type: none;
+  font-weight: 400;
+  padding-left: 1.5rem;
+  margin-bottom: 12px;
+}
+
+ul.list-style-none ul ul {
+  list-style-type: none;
+  font-weight: 100;
+  padding-left: 1.5rem;
+  margin-bottom: 0px;
 }
 
 /* Media */

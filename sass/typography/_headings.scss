@@ -162,26 +162,3 @@ blockquote {
 		hyphens: none;
 	}
 }
-
-.dark-background {
-	color: $color__text-bright;
-	background-color: rgba(0,0,0,0.92);
-	background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 2%, rgba(0,0,0,0.8) 7%, rgba(0,0,0,0.8) 93%, rgba(0,0,0,0.85) 98%, rgba(0,0,0,0.9) 100%); 
-
-}
-
-.project-info {
-	line-height: 1.1em;
-	letter-spacing: 0.1em;
-	font-size: $font__size-xxs;
-
-	h1, h2, h3 {
-		font-size: $font__size-lg;
-		letter-spacing: 0.05em;
-	}
-
-	h4, h5, h6 {
-		font-size: $font__size-md;
-		letter-spacing: 0.05em;
-	}
-}
