@@ -6187,15 +6187,15 @@ ul.list-style-none li {
 ul.list-style-none ul {
   list-style-type: none;
   font-weight: 400;
-  padding-right: 1rem;
-  margin-bottom: 8px;
+  padding-right: 1.5rem;
+  margin-bottom: 12px;
 }
 
 ul.list-style-none ul ul {
   list-style-type: none;
   font-weight: 100;
-  padding-right: 1rem;
-  margin-bottom: 4px;
+  padding-right: 1.5rem;
+  margin-bottom: 0px;
 }
 
 /* Media */
