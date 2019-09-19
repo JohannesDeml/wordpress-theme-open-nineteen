@@ -1029,17 +1029,23 @@
 
 // custom
 
-.dark-background {
+.dark-background-gradient {
 	color: $color__text-bright;
 	background-color: rgba(0,0,0,0.92);
 	background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 2%, rgba(0,0,0,0.8) 7%, rgba(0,0,0,0.8) 93%, rgba(0,0,0,0.85) 98%, rgba(0,0,0,0.9) 100%); 
+}
 
+.light-background-gradient {
+	color: $color__text-dark;
+	background-color: rgba(0,0,0,0.03);
+	background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.05) 2%, rgba(0,0,0,0.03) 7%, rgba(0,0,0,0.03) 93%, rgba(0,0,0,0.05) 98%, rgba(0,0,0,0.08) 100%); 
 }
 
 .project-info {
 	line-height: 1.1em;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.08em;
 	font-size: $font__size-xxs;
+	padding: 4px 20px;
 
 	h1, h2, h3 {
 		font-size: $font__size-lg;
