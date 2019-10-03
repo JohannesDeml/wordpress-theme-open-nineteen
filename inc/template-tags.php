@@ -55,12 +55,12 @@ if ( ! function_exists( 'twentynineteen_comment_count' ) ) :
 	 * Prints HTML with the comment count for the current post.
 	 */
 	function twentynineteen_comment_count() {
-		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		if ( ! post_password_required() && comments_open() && get_comments_number() ) {
 			echo '<span class="comments-link">';
 			echo twentynineteen_get_icon_svg( 'comment', 16 );
 
 			/* translators: %s: Name of current post. Only visible to screen readers. */
-			comments_popup_link( sprintf( __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'twentynineteen' ), get_the_title() ) );
+			comments_popup_link( sprintf( __( 'Leave a comment <span class="screen-reader-text"> on %s</span>', 'twentynineteen' ), get_the_title() ) );
 
 			echo '</span>';
 		}
@@ -75,9 +75,6 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 
 		// Hide author, post date, category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
-
-			// Posted by
-			twentynineteen_posted_by();
 
 			// Posted on
 			twentynineteen_posted_on();

@@ -13,7 +13,6 @@ $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentyni
 
 <?php if ( ! is_page() ) : ?>
 <div class="entry-meta">
-	<?php twentynineteen_posted_by(); ?>
 	<?php twentynineteen_posted_on(); ?>
 	<span class="comment-count">
 		<?php
@@ -28,7 +27,7 @@ $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentyni
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers. */
+					/* translators: %s: Post title. Only visible to screen readers. */
 					__( 'Edit <span class="screen-reader-text">%s</span>', 'twentynineteen' ),
 					array(
 						'span' => array(

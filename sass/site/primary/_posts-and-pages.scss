@@ -44,7 +44,6 @@
 
 	.entry-title {
 
-		@include post-section-dash;
 		margin: 0;
 
 		a {
@@ -160,7 +159,7 @@
 			}
 
 			&:before,
-			&:after, {
+			&:after {
 				position: absolute;
 				display: block;
 				width: 100%;
@@ -281,7 +280,6 @@
 	}
 
 	.author-title {
-		@include post-section-dash;
 		display: inline;
 	}
 
