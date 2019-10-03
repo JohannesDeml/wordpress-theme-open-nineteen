@@ -1,11 +1,11 @@
 {
   "name": "opennineteen",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "Open Wordress Theme",
   "bugs": {
-    "url": "https://github.com/WordPress/twentynineteen/issues"
+    "url": "https://github.com/JohannesDeml/wordpress-theme-open-nineteen/issues"
   },
-  "homepage": "https://github.com/WordPress/twentynineteen#readme",
+  "homepage": "https://github.com/JohannesDeml/wordpress-theme-open-nineteen",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.6.0",
     "autoprefixer": "^9.6.1",
