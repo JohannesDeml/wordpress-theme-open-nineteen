@@ -402,4 +402,8 @@
 		display: block;
 		width: 100%;
 	}
+
+	[type="checkbox"] + label {
+		padding-left: 4px;
+	}
 }
