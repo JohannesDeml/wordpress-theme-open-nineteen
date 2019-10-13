@@ -4278,7 +4278,7 @@ body.page .main-navigation {
 		 * but smooth effect when resizing the screen.
 		 */
   transition: opacity 1200ms ease-in-out;
-  opacity: 0.35;
+  opacity: 0.25;
   z-index: 5;
   /* When image filters are active, a blue overlay is added. */
 }
@@ -4422,6 +4422,18 @@ body.page .main-navigation {
 
 .entry .post-thumbnail {
   margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry .post-thumbnail {
+    width: calc(8 * (100vw / 12) - 28px);
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .entry .post-thumbnail {
+    width: calc(6 * (100vw / 12) - 28px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -5063,6 +5075,10 @@ body.page .main-navigation {
   width: 100%;
 }
 
+.comment-form [type="checkbox"] + label {
+  padding-left: 8px;
+}
+
 /*--------------------------------------------------------------
 ## Archives
 --------------------------------------------------------------*/
@@ -5109,6 +5125,15 @@ body.page .main-navigation {
   display: block;
   color: #111;
   font-size: 1.75em;
+}
+
+.header-feed {
+  margin-left: 16px;
+  opacity: 0.2;
+}
+
+.header-feed:hover, .header-feed:active {
+  opacity: 1.0;
 }
 
 @media only screen and (min-width: 768px) {

@@ -33,6 +33,15 @@
 	font-size: 1.75em;
 }
 
+.header-feed {
+    margin-left: 16px;
+	opacity: 0.2;
+	
+	&:hover, &:active{
+		opacity: 1.0;
+	}
+}
+
 .hfeed .entry .entry-header {
 
 	@include media(tablet) {

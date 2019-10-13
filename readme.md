@@ -24,6 +24,13 @@ npm install
 npm run-script build
 ```
 
+## Todo
+
+* Create a fitting preview screenshot
+* Improve Category entry style
+* Use variable inter font when supported
+* Add theme to [official wordpress themes](https://make.wordpress.org/themes/handbook/review/)
+
 ## Additional Licences
 
 * Twenty Nineteen WordPress Theme, © 2018 WordPress.org, GNU GPL

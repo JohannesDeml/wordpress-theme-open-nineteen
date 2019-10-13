@@ -4272,7 +4272,7 @@ body.page .main-navigation {
 		 * but smooth effect when resizing the screen.
 		 */
   transition: opacity 1200ms ease-in-out;
-  opacity: 0.35;
+  opacity: 0.25;
   z-index: 5;
   /* When image filters are active, a blue overlay is added. */
 }
@@ -4416,6 +4416,18 @@ body.page .main-navigation {
 
 .entry .post-thumbnail {
   margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry .post-thumbnail {
+    width: calc(8 * (100vw / 12) - 28px);
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .entry .post-thumbnail {
+    width: calc(6 * (100vw / 12) - 28px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -5057,6 +5069,10 @@ body.page .main-navigation {
   width: 100%;
 }
 
+.comment-form [type="checkbox"] {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
 /*--------------------------------------------------------------
 ## Archives
 --------------------------------------------------------------*/
@@ -5070,7 +5086,7 @@ body.page .main-navigation {
   .archive .page-header,
   .search .page-header,
   .error404 .page-header {
-    margin: 0 calc(10% + 60px);
+    margin: 0 calc(10% + 60px) calc(3 * 1rem);
   }
 }
 
@@ -5098,21 +5114,20 @@ body.page .main-navigation {
   clear: both;
 }
 
-.archive .page-header .search-term:after,
-.archive .page-header .page-description:after,
-.search .page-header .search-term:after,
-.search .page-header .page-description:after,
-.error404 .page-header .search-term:after,
-.error404 .page-header .page-description:after {
-  content: ".";
-  font-weight: bold;
-  color: #767676;
-}
-
-.archive .page-header .page-description {
+.archive .page-header .page-description,
+.search .page-header .page-description {
   display: block;
   color: #111;
   font-size: 1.75em;
+}
+
+.header-feed {
+  margin-right: 16px;
+  opacity: 0.2;
+}
+
+.header-feed:hover, .header-feed:active {
+  opacity: 1.0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5122,17 +5137,13 @@ body.page .main-navigation {
 }
 
 /* 404 & Not found */
-.error-404.not-found .page-title,
 .error-404.not-found .page-content,
-.no-results.not-found .page-title,
 .no-results.not-found .page-content {
   margin: calc(3 * 1rem) 1rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .error-404.not-found .page-title,
   .error-404.not-found .page-content,
-  .no-results.not-found .page-title,
   .no-results.not-found .page-content {
     margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
   }
