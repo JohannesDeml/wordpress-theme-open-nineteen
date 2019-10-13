@@ -1,3 +1,6 @@
+![Preview Screenshot Open Nineteen](./screenshot.png)
+> Current Version [1.4.1](../../releases/)
+
 # Introduction
 
 The wordpress twentynineteen theme is a beautiful fully functional theme with gutenberg support. This repository is a standaolone fork of the theme with some design changes. This theme is ment for personal websites that should be light and elegant. [Example Website](https://deml.io)
@@ -15,6 +18,7 @@ The wordpress twentynineteen theme is a beautiful fully functional theme with gu
 * Remove author information
 * Get rid of oversized headings
 * Add of some additional css classes for easy styling
+* Match Preview image size for archive lists to text width to use less space for each entry
 
 
 ## Build Project
@@ -26,14 +30,12 @@ npm run-script build
 
 ## Todo
 
-* Create a fitting preview screenshot
-* Improve Category entry style
 * Use variable inter font when supported
 * Add theme to [official wordpress themes](https://make.wordpress.org/themes/handbook/review/)
 
 ## Additional Licences
 
 * Twenty Nineteen WordPress Theme, © 2018 WordPress.org, GNU GPL
-* Inter Fonz, © 2016-2019 The Inter Project Authors (me@rsms.me), SIL OPEN FONT LICENSE Version 1.1
+* Inter Font, © 2016-2019 The Inter Project Authors (me@rsms.me), SIL OPEN FONT LICENSE Version 1.1
 * normalize.css, © 2012-2018 Nicolas Gallagher and Jonathan Neal, MIT
 * Underscores, © 2012-2018 Automattic, Inc., GNU GPL v2 or later
