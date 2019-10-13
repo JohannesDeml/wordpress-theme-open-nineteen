@@ -110,6 +110,13 @@
 
 	.post-thumbnail {
 
+		@include media(tablet) {
+			width: $size__site-tablet-content;
+		}
+
+		@include media(desktop) {
+			width: $size__site-desktop-content;
+		}
 		margin: $size__spacing-unit;
 
 		@include media(tablet) {
