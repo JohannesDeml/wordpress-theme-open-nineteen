@@ -5105,6 +5105,15 @@ body.page .main-navigation {
   font-size: 1.75em;
 }
 
+.header-feed {
+  margin-right: 16px;
+  opacity: 0.2;
+}
+
+.header-feed:hover, .header-feed:active {
+  opacity: 1.0;
+}
+
 @media only screen and (min-width: 768px) {
   .hfeed .entry .entry-header {
     margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
