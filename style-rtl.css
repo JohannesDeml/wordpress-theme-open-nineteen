@@ -5069,8 +5069,8 @@ body.page .main-navigation {
   width: 100%;
 }
 
-.comment-form [type="checkbox"] {
-  box-shadow: 0 0 0 3px hotpink;
+.comment-form [type="checkbox"] + label {
+  padding-right: 8px;
 }
 
 /*--------------------------------------------------------------
