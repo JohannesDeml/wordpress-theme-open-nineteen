@@ -4404,17 +4404,17 @@ body.page .main-navigation {
 }
 
 .entry .entry-footer {
-  margin: calc(2 * 1rem) 1rem 1rem;
+  margin: calc(0.5 * 1rem) 1rem 1rem 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-footer {
-    margin: 1rem calc(10% + 60px) calc(3 * 1rem);
+    margin: 1rem calc(10% + 60px) calc(3 * 1rem) calc(10% + 60px);
     max-width: calc(8 * (100vw / 12) - 28px);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1168px) {
   .entry .entry-footer {
     max-width: calc(6 * (100vw / 12) - 28px);
   }
