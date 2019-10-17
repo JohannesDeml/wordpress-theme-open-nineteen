@@ -86,7 +86,7 @@ function twentynineteen_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'image_filter',
 		array(
-			'default'           => 1,
+			'default'           => 0,
 			'sanitize_callback' => 'absint',
 			'transport'         => 'postMessage',
 		)
