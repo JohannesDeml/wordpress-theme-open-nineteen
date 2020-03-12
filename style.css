@@ -53,51 +53,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter var";
+  font-weight: 100 900;
+  font-display: swap;
   font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("fonts/Inter-Thin.woff2?v=3.12") format("woff2"), url("fonts/Inter-Thin.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 100;
-  font-display: swap;
-  src: url("fonts/Inter-ThinItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-ThinItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url("fonts/Inter-ExtraLight.woff2?v=3.12") format("woff2"), url("fonts/Inter-ExtraLight.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 200;
-  font-display: swap;
-  src: url("fonts/Inter-ExtraLightItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-ExtraLightItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("fonts/Inter-Light.woff2?v=3.12") format("woff2"), url("fonts/Inter-Light.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url("fonts/Inter-LightItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-LightItalic.woff?v=3.12") format("woff");
+  font-named-instance: "Regular";
+  src: url("fonts/Inter-roman.var.woff2?v=3.12") format("woff2");
 }
 
 @font-face {
@@ -135,22 +96,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/Inter-SemiBold.woff2?v=3.12") format("woff2"), url("fonts/Inter-SemiBold.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/Inter-SemiBoldItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-SemiBoldItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("fonts/Inter-Bold.woff2?v=3.12") format("woff2"), url("fonts/Inter-Bold.woff?v=3.12") format("woff");
@@ -162,65 +107,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-weight: 700;
   font-display: swap;
   src: url("fonts/Inter-BoldItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-BoldItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/Inter-ExtraBold.woff2?v=3.12") format("woff2"), url("fonts/Inter-ExtraBold.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/Inter-ExtraBoldItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-ExtraBoldItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("fonts/Inter-Black.woff2?v=3.12") format("woff2"), url("fonts/Inter-Black.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 900;
-  font-display: swap;
-  src: url("fonts/Inter-BlackItalic.woff2?v=3.12") format("woff2"), url("fonts/Inter-BlackItalic.woff?v=3.12") format("woff");
-}
-
-/* -------------------------------------------------------
-  Variable font.
-  Usage:
-
-	html { font-family: 'Inter', sans-serif; }
-	@supports (font-variation-settings: normal) {
-	  html { font-family: 'Inter var', sans-serif; }
-	}
-  */
-@font-face {
-  font-family: "Inter var";
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: "Regular";
-  src: url("fonts/Inter-roman.var.woff2?v=3.12") format("woff2");
-}
-
-@font-face {
-  font-family: "Inter var";
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: "Italic";
-  src: url("fonts/Inter-italic.var.woff2?v=3.12") format("woff2");
 }
 
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
@@ -2378,6 +2264,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 button,
 input,
 select,
@@ -2388,6 +2280,16 @@ textarea {
   font-weight: 400;
   line-height: 1.8;
   text-rendering: optimizeLegibility;
+}
+
+@supports (font-variation-settings: normal) {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .author-description .author-link,
@@ -2419,6 +2321,37 @@ h6 {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
 }
 
+@supports (font-variation-settings: normal) {
+  .author-description .author-link,
+  .comment-metadata,
+  .comment-reply-link,
+  .comments-title,
+  .comment-author .fn,
+  .discussion-meta-info,
+  .entry-meta,
+  .entry-footer,
+  .main-navigation,
+  .no-comments,
+  .not-found .page-title,
+  .error-404 .page-title,
+  .post-navigation .post-title,
+  .page-links,
+  .page-description,
+  .pagination .nav-links,
+  .sticky-post,
+  .site-title,
+  .site-info,
+  #cancel-comment-reply-link,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .main-navigation,
 .page-description,
 .author-description .author-link,
@@ -2445,6 +2378,12 @@ h6 {
 
 .page-title {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .page-title {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .site-branding,
@@ -2579,6 +2518,12 @@ blockquote cite {
   font-size: 0.88889em;
   font-style: normal;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  blockquote cite {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 pre {
@@ -2745,6 +2690,12 @@ table {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
 }
 
+@supports (font-variation-settings: normal) {
+  table {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 table td,
 table th {
   padding: 0.5em;
@@ -2772,6 +2723,16 @@ input[type="submit"] {
   padding: 0.76rem 1rem;
   text-decoration: none;
   vertical-align: bottom;
+}
+
+@supports (font-variation-settings: normal) {
+  .button,
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .button:hover,
@@ -3716,6 +3677,13 @@ body.page .main-navigation {
   width: 100%;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   font-weight: bold;
+}
+
+@supports (font-variation-settings: normal) {
+  .comment-navigation .nav-previous,
+  .comment-navigation .nav-next {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .comment-navigation .nav-previous .secondary-text,
@@ -4820,6 +4788,13 @@ body.page .main-navigation {
   margin-bottom: 1rem;
 }
 
+@supports (font-variation-settings: normal) {
+  .comment-list .pingback .comment-body,
+  .comment-list .trackback .comment-body {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .comment-list .pingback .comment-body a:not(.comment-edit-link),
 .comment-list .trackback .comment-body a:not(.comment-edit-link) {
   font-weight: bold;
@@ -4834,6 +4809,13 @@ body.page .main-navigation {
   color: #767676;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   font-weight: 500;
+}
+
+@supports (font-variation-settings: normal) {
+  .comment-list .pingback .comment-body .comment-edit-link,
+  .comment-list .trackback .comment-body .comment-edit-link {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 #respond + .comment-reply {
@@ -5051,6 +5033,13 @@ body.page .main-navigation {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   font-size: 0.88889em;
   color: #767676;
+}
+
+@supports (font-variation-settings: normal) {
+  .comment-form .comment-notes,
+  .comment-form label {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -5272,6 +5261,19 @@ body.page .main-navigation {
   margin-bottom: 0.5rem;
 }
 
+@supports (font-variation-settings: normal) {
+  .widget_archive ul li,
+  .widget_categories ul li,
+  .widget_meta ul li,
+  .widget_nav_menu ul li,
+  .widget_pages ul li,
+  .widget_recent_comments ul li,
+  .widget_recent_entries ul li,
+  .widget_rss ul li {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .widget_archive ul ul,
 .widget_categories ul ul,
 .widget_meta ul ul,
@@ -5300,6 +5302,12 @@ body.page .main-navigation {
 .widget_tag_cloud .tagcloud {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   font-weight: 700;
+}
+
+@supports (font-variation-settings: normal) {
+  .widget_tag_cloud .tagcloud {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .widget_search .search-field {
@@ -5339,6 +5347,12 @@ body.page .main-navigation {
   display: table;
   width: 100%;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .widget_calendar .calendar_wrap .wp-calendar-nav {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .widget_calendar .calendar_wrap .wp-calendar-nav span {
@@ -5604,6 +5618,12 @@ body.page .main-navigation {
   outline: none;
 }
 
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-button .wp-block-button__link {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background) {
   background-color: #0073aa;
 }
@@ -5676,6 +5696,14 @@ body.page .main-navigation {
   text-decoration: none;
 }
 
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-archives li > a,
+  .entry .entry-content .wp-block-categories li > a,
+  .entry .entry-content .wp-block-latest-posts li > a {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .entry .entry-content .wp-block-archives.aligncenter,
 .entry .entry-content .wp-block-categories.aligncenter {
   text-align: center;
@@ -5706,6 +5734,12 @@ body.page .main-navigation {
   font-size: 0.88889em;
   color: #767676;
   line-height: 1.2;
+}
+
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-latest-posts .wp-block-latest-posts__post-date {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .entry .entry-content .wp-block-latest-posts .wp-block-latest-posts__post-full-content,
@@ -5756,12 +5790,24 @@ body.page .main-navigation {
   line-height: 1.8;
 }
 
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-verse {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   font-size: 2em;
   line-height: 1;
   font-weight: bold;
   margin: 0 0.25em 0 0;
+}
+
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .has-drop-cap:not(:focus):first-letter {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .entry .entry-content .wp-block-pullquote {
@@ -5808,6 +5854,12 @@ body.page .main-navigation {
 			 * because the cite tag sometimes gets wrapped in a p tag. This is equivalent to $font-size_xs.
 			 */
   font-size: calc(1rem / (1.25 * 1));
+}
+
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-pullquote cite {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .entry .entry-content .wp-block-pullquote.alignleft, .entry .entry-content .wp-block-pullquote.alignright {
@@ -6038,6 +6090,17 @@ body.page .main-navigation {
   color: #fff;
 }
 
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text,
+  .entry .entry-content .wp-block-cover-image .wp-block-cover-text,
+  .entry .entry-content .wp-block-cover-image h2,
+  .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
+  .entry .entry-content .wp-block-cover .wp-block-cover-text,
+  .entry .entry-content .wp-block-cover h2 {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text,
   .entry .entry-content .wp-block-cover-image .wp-block-cover-text,
@@ -6129,6 +6192,16 @@ body.page .main-navigation {
   text-align: center;
 }
 
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-audio figcaption,
+  .entry .entry-content .wp-block-video figcaption,
+  .entry .entry-content .wp-block-image figcaption,
+  .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
+  .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .entry .entry-content .wp-block-separator,
 .entry .entry-content hr {
   background-color: #767676;
@@ -6216,6 +6289,12 @@ body.page .main-navigation {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
 }
 
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-file {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 .entry .entry-content .wp-block-file .wp-block-file__button {
   display: table;
   transition: background 150ms ease-in-out;
@@ -6231,6 +6310,12 @@ body.page .main-navigation {
   color: #fff;
   margin-left: 0;
   margin-top: calc(0.75 * 1rem);
+}
+
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-file .wp-block-file__button {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 @media only screen and (min-width: 1168px) {
@@ -6355,6 +6440,12 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   font-weight: bold;
+}
+
+@supports (font-variation-settings: normal) {
+  .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
@@ -6625,6 +6716,12 @@ svg {
   text-align: center;
 }
 
+@supports (font-variation-settings: normal) {
+  .wp-caption-text {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
@@ -6719,6 +6816,12 @@ svg {
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
+}
+
+@supports (font-variation-settings: normal) {
+  .gallery-caption {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  }
 }
 
 .gallery-item > div > a {
