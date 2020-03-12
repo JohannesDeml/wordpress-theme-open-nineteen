@@ -77,51 +77,51 @@ function twentynineteen_get_feed_icon_link() {
  */
 function twentynineteen_get_the_archive_title() {
 	if ( is_category() ) {
-		$title = '<span class="page-description">' 
+		$title = '<span class="page-description">'
 			. single_term_title( '', false )
 			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_tag() ) {
-		$title = '<span class="page-description">#' 
+		$title = '<span class="page-description">#'
 			. single_term_title( '', false )
 			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_author() ) {
-		$title = __( 'Author Archives ', 'twentynineteen' ) 
-			. '<span class="page-description">' 
-			. get_the_author_meta( 'display_name' ) 
-			. twentynineteen_get_feed_icon_link() 
+		$title = __( 'Author Archives ', 'open-nineteen' )
+			. '<span class="page-description">'
+			. get_the_author_meta( 'display_name' )
+			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_year() ) {
-		$title = __( 'Yearly Archives ', 'twentynineteen' ) 
-			. '<span class="page-description">' 
-			. get_the_date( _x( 'Y', 'yearly archives date format', 'twentynineteen' ) )
-			. twentynineteen_get_feed_icon_link() 
+		$title = __( 'Yearly Archives ', 'open-nineteen' )
+			. '<span class="page-description">'
+			. get_the_date( _x( 'Y', 'yearly archives date format', 'open-nineteen' ) )
+			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_month() ) {
-		$title = __( 'Monthly Archives ', 'twentynineteen' ) 
-			. '<span class="page-description">' 
-			. get_the_date( _x( 'F Y', 'monthly archives date format', 'twentynineteen' ) )
-			. twentynineteen_get_feed_icon_link() 
+		$title = __( 'Monthly Archives ', 'open-nineteen' )
+			. '<span class="page-description">'
+			. get_the_date( _x( 'F Y', 'monthly archives date format', 'open-nineteen' ) )
+			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_day() ) {
-		$title = __( 'Daily Archives ', 'twentynineteen' ) 
-			. '<span class="page-description">' 
+		$title = __( 'Daily Archives ', 'open-nineteen' )
+			. '<span class="page-description">'
 			. get_the_date()
-			. twentynineteen_get_feed_icon_link() 
+			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_post_type_archive() ) {
-		$title = __( 'Post Type Archives ', 'twentynineteen' ) 
-			. '<span class="page-description">' 
+		$title = __( 'Post Type Archives ', 'open-nineteen' )
+			. '<span class="page-description">'
 			. post_type_archive_title( '', false )
-			. twentynineteen_get_feed_icon_link() 
+			. twentynineteen_get_feed_icon_link()
 			. '</span>';
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: %s: Taxonomy singular name. */
-		$title = sprintf( esc_html__( '%s Archives', 'twentynineteen' ), $tax->labels->singular_name );
+		$title = sprintf( esc_html__( '%s Archives', 'open-nineteen' ), $tax->labels->singular_name );
 	} else {
-		$title = __( 'Archives', 'twentynineteen' );
+		$title = __( 'Archives', 'open-nineteen' );
 	}
 	return $title;
 }
@@ -165,14 +165,14 @@ function twentynineteen_add_ellipses_to_nav( $nav_menu, $args ) {
 				<ul class="main-menu">
 					<li class="menu-item menu-item-has-children">
 						<button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1"
-							aria-label="' . esc_attr__( 'More', 'twentynineteen' ) . '" aria-haspopup="true" aria-expanded="false">' .
+							aria-label="' . esc_attr__( 'More', 'open-nineteen' ) . '" aria-haspopup="true" aria-expanded="false">' .
 							twentynineteen_get_icon_svg( 'arrow_drop_down_ellipsis' ) . '
 						</button>
 						<ul class="sub-menu hidden-links">
 							<li class="mobile-parent-nav-menu-item">
 								<button class="menu-item-link-return">' .
 									twentynineteen_get_icon_svg( 'chevron_left' ) .
-									esc_html__( 'Back', 'twentynineteen' ) . '
+									esc_html__( 'Back', 'open-nineteen' ) . '
 								</button>
 							</li>
 						</ul>

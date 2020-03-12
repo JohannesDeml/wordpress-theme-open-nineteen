@@ -30,9 +30,9 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Twenty Nineteen, use a find and replace
-		 * to change 'twentynineteen' to the name of your theme in all the template files.
+		 * to change 'open-nineteen' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'twentynineteen', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'open-nineteen', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -56,9 +56,9 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'menu-1' => __( 'Primary', 'twentynineteen' ),
-				'footer' => __( 'Footer Menu', 'twentynineteen' ),
-				'social' => __( 'Social Links Menu', 'twentynineteen' ),
+				'menu-1' => __( 'Primary', 'open-nineteen' ),
+				'footer' => __( 'Footer Menu', 'open-nineteen' ),
+				'social' => __( 'Social Links Menu', 'open-nineteen' ),
 			)
 		);
 
@@ -114,26 +114,26 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Small', 'twentynineteen' ),
-					'shortName' => __( 'S', 'twentynineteen' ),
+					'name'      => __( 'Small', 'open-nineteen' ),
+					'shortName' => __( 'S', 'open-nineteen' ),
 					'size'      => 19.5,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => __( 'Normal', 'twentynineteen' ),
-					'shortName' => __( 'M', 'twentynineteen' ),
+					'name'      => __( 'Normal', 'open-nineteen' ),
+					'shortName' => __( 'M', 'open-nineteen' ),
 					'size'      => 22,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => __( 'Large', 'twentynineteen' ),
-					'shortName' => __( 'L', 'twentynineteen' ),
+					'name'      => __( 'Large', 'open-nineteen' ),
+					'shortName' => __( 'L', 'open-nineteen' ),
 					'size'      => 36.5,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => __( 'Huge', 'twentynineteen' ),
-					'shortName' => __( 'XL', 'twentynineteen' ),
+					'name'      => __( 'Huge', 'open-nineteen' ),
+					'shortName' => __( 'XL', 'open-nineteen' ),
 					'size'      => 49.5,
 					'slug'      => 'huge',
 				),
@@ -145,27 +145,27 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => 'default' === get_theme_mod( 'primary_color' ) ? __( 'Blue', 'twentynineteen' ) : null,
+					'name'  => 'default' === get_theme_mod( 'primary_color' ) ? __( 'Blue', 'open-nineteen' ) : null,
 					'slug'  => 'primary',
 					'color' => twentynineteen_hsl_hex( 'default' === get_theme_mod( 'primary_color' ) ? 199 : get_theme_mod( 'primary_color_hue', 199 ), 100, 33 ),
 				),
 				array(
-					'name'  => 'default' === get_theme_mod( 'primary_color' ) ? __( 'Dark Blue', 'twentynineteen' ) : null,
+					'name'  => 'default' === get_theme_mod( 'primary_color' ) ? __( 'Dark Blue', 'open-nineteen' ) : null,
 					'slug'  => 'secondary',
 					'color' => twentynineteen_hsl_hex( 'default' === get_theme_mod( 'primary_color' ) ? 199 : get_theme_mod( 'primary_color_hue', 199 ), 100, 23 ),
 				),
 				array(
-					'name'  => __( 'Dark Gray', 'twentynineteen' ),
+					'name'  => __( 'Dark Gray', 'open-nineteen' ),
 					'slug'  => 'dark-gray',
 					'color' => '#111',
 				),
 				array(
-					'name'  => __( 'Light Gray', 'twentynineteen' ),
+					'name'  => __( 'Light Gray', 'open-nineteen' ),
 					'slug'  => 'light-gray',
 					'color' => '#767676',
 				),
 				array(
-					'name'  => __( 'White', 'twentynineteen' ),
+					'name'  => __( 'White', 'open-nineteen' ),
 					'slug'  => 'white',
 					'color' => '#FFF',
 				),
@@ -187,9 +187,9 @@ function twentynineteen_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer', 'twentynineteen' ),
+			'name'          => __( 'Footer', 'open-nineteen' ),
 			'id'            => 'sidebar-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'twentynineteen' ),
+			'description'   => __( 'Add widgets here to appear in your footer.', 'open-nineteen' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

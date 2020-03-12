@@ -28,7 +28,7 @@ $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentyni
 			sprintf(
 				wp_kses(
 					/* translators: %s: Post title. Only visible to screen readers. */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'twentynineteen' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'open-nineteen' ),
 					array(
 						'span' => array(
 							'class' => array(),

@@ -43,7 +43,7 @@ if ( ! function_exists( 'twentynineteen_posted_by' ) ) :
 			/* translators: 1: SVG icon. 2: post author, only visible to screen readers. 3: author link. */
 			'<span class="byline">%1$s<span class="screen-reader-text">%2$s</span><span class="author vcard"><a class="url fn n" href="%3$s">%4$s</a></span></span>',
 			twentynineteen_get_icon_svg( 'person', 16 ),
-			__( 'Posted by', 'twentynineteen' ),
+			__( 'Posted by', 'open-nineteen' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
 		);
@@ -60,7 +60,7 @@ if ( ! function_exists( 'twentynineteen_comment_count' ) ) :
 			echo twentynineteen_get_icon_svg( 'comment', 16 );
 
 			/* translators: %s: Name of current post. Only visible to screen readers. */
-			comments_popup_link( sprintf( __( 'Leave a comment <span class="screen-reader-text"> on %s</span>', 'twentynineteen' ), get_the_title() ) );
+			comments_popup_link( sprintf( __( 'Leave a comment <span class="screen-reader-text"> on %s</span>', 'open-nineteen' ), get_the_title() ) );
 
 			echo '</span>';
 		}
@@ -80,25 +80,25 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 			twentynineteen_posted_on();
 
 			/* translators: used between list items, there is a space after the comma. */
-			$categories_list = get_the_category_list( __( ', ', 'twentynineteen' ) );
+			$categories_list = get_the_category_list( __( ', ', 'open-nineteen' ) );
 			if ( $categories_list ) {
 				printf(
 					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
 					'<span class="cat-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
 					twentynineteen_get_icon_svg( 'archive', 16 ),
-					__( 'Posted in', 'twentynineteen' ),
+					__( 'Posted in', 'open-nineteen' ),
 					$categories_list
 				); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma. */
-			$tags_list = get_the_tag_list( '', __( ', ', 'twentynineteen' ) );
+			$tags_list = get_the_tag_list( '', __( ', ', 'open-nineteen' ) );
 			if ( $tags_list ) {
 				printf(
 					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */
 					'<span class="tags-links">%1$s<span class="screen-reader-text">%2$s </span>%3$s</span>',
 					twentynineteen_get_icon_svg( 'tag', 16 ),
-					__( 'Tags:', 'twentynineteen' ),
+					__( 'Tags:', 'open-nineteen' ),
 					$tags_list
 				); // WPCS: XSS OK.
 			}
@@ -114,7 +114,7 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'twentynineteen' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'open-nineteen' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -224,11 +224,11 @@ if ( ! function_exists( 'twentynineteen_the_posts_navigation' ) ) :
 				'prev_text' => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
 					twentynineteen_get_icon_svg( 'chevron_left', 22 ),
-					__( 'Newer posts', 'twentynineteen' )
+					__( 'Newer posts', 'open-nineteen' )
 				),
 				'next_text' => sprintf(
 					'<span class="nav-next-text">%s</span> %s',
-					__( 'Older posts', 'twentynineteen' ),
+					__( 'Older posts', 'open-nineteen' ),
 					twentynineteen_get_icon_svg( 'chevron_right', 22 )
 				),
 			)

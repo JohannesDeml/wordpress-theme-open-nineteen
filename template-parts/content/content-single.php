@@ -24,7 +24,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Post title. Only visible to screen readers. */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentynineteen' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'open-nineteen' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -37,7 +37,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'open-nineteen' ),
 				'after'  => '</div>',
 			)
 		);

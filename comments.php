@@ -30,14 +30,14 @@ $discussion = twentynineteen_get_discussion_data();
 		<?php
 		if ( comments_open() ) {
 			if ( have_comments() ) {
-				_e( 'Join the Conversation', 'twentynineteen' );
+				_e( 'Join the Conversation', 'open-nineteen' );
 			} else {
-				_e( 'Leave a comment', 'twentynineteen' );
+				_e( 'Leave a comment', 'open-nineteen' );
 			}
 		} else {
 			if ( '1' == $discussion->responses ) {
 				/* translators: %s: Post title. */
-				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'twentynineteen' ), get_the_title() );
+				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'open-nineteen' ), get_the_title() );
 			} else {
 				printf(
 					/* translators: 1: Number of comments, 2: Post title. */
@@ -46,7 +46,7 @@ $discussion = twentynineteen_get_discussion_data();
 						'%1$s replies on &ldquo;%2$s&rdquo;',
 						$discussion->responses,
 						'comments title',
-						'twentynineteen'
+						'open-nineteen'
 					),
 					number_format_i18n( $discussion->responses ),
 					get_the_title()
@@ -89,11 +89,11 @@ $discussion = twentynineteen_get_discussion_data();
 		if ( have_comments() ) :
 			$prev_icon     = twentynineteen_get_icon_svg( 'chevron_left', 22 );
 			$next_icon     = twentynineteen_get_icon_svg( 'chevron_right', 22 );
-			$comments_text = __( 'Comments', 'twentynineteen' );
+			$comments_text = __( 'Comments', 'open-nineteen' );
 			the_comments_navigation(
 				array(
-					'prev_text' => sprintf( '%s <span class="nav-prev-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span>', $prev_icon, __( 'Previous', 'twentynineteen' ), __( 'Comments', 'twentynineteen' ) ),
-					'next_text' => sprintf( '<span class="nav-next-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span> %s', __( 'Next', 'twentynineteen' ), __( 'Comments', 'twentynineteen' ), $next_icon ),
+					'prev_text' => sprintf( '%s <span class="nav-prev-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span>', $prev_icon, __( 'Previous', 'open-nineteen' ), __( 'Comments', 'open-nineteen' ) ),
+					'next_text' => sprintf( '<span class="nav-next-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span> %s', __( 'Next', 'open-nineteen' ), __( 'Comments', 'open-nineteen' ), $next_icon ),
 				)
 			);
 		endif;
@@ -102,9 +102,9 @@ $discussion = twentynineteen_get_discussion_data();
 		if ( comments_open() && 'asc' === strtolower( get_option( 'comment_order', 'asc' ) ) ) :
 			?>
 			<div class="comment-form-flex">
-				<span class="screen-reader-text"><?php _e( 'Leave a comment', 'twentynineteen' ); ?></span>
+				<span class="screen-reader-text"><?php _e( 'Leave a comment', 'open-nineteen' ); ?></span>
 				<?php twentynineteen_comment_form( 'asc' ); ?>
-				<h2 class="comments-title" aria-hidden="true"><?php _e( 'Leave a comment', 'twentynineteen' ); ?></h2>
+				<h2 class="comments-title" aria-hidden="true"><?php _e( 'Leave a comment', 'open-nineteen' ); ?></h2>
 			</div>
 			<?php
 		endif;
@@ -113,7 +113,7 @@ $discussion = twentynineteen_get_discussion_data();
 		if ( ! comments_open() ) :
 			?>
 			<p class="no-comments">
-				<?php _e( 'Comments are closed.', 'twentynineteen' ); ?>
+				<?php _e( 'Comments are closed.', 'open-nineteen' ); ?>
 			</p>
 			<?php
 		endif;

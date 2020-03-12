@@ -50,10 +50,10 @@ function twentynineteen_customize_register( $wp_customize ) {
 		'primary_color',
 		array(
 			'type'     => 'radio',
-			'label'    => __( 'Primary Color', 'twentynineteen' ),
+			'label'    => __( 'Primary Color', 'open-nineteen' ),
 			'choices'  => array(
-				'default' => _x( 'Default', 'primary color', 'twentynineteen' ),
-				'custom'  => _x( 'Custom', 'primary color', 'twentynineteen' ),
+				'default' => _x( 'Default', 'primary color', 'open-nineteen' ),
+				'custom'  => _x( 'Custom', 'primary color', 'open-nineteen' ),
 			),
 			'section'  => 'colors',
 			'priority' => 5,
@@ -75,7 +75,7 @@ function twentynineteen_customize_register( $wp_customize ) {
 			$wp_customize,
 			'primary_color_hue',
 			array(
-				'description' => __( 'Apply a custom color for buttons, links, featured images, etc.', 'twentynineteen' ),
+				'description' => __( 'Apply a custom color for buttons, links, featured images, etc.', 'open-nineteen' ),
 				'section'     => 'colors',
 				'mode'        => 'hue',
 			)
@@ -95,7 +95,7 @@ function twentynineteen_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'image_filter',
 		array(
-			'label'   => __( 'Apply a filter to featured images using the primary color', 'twentynineteen' ),
+			'label'   => __( 'Apply a filter to featured images using the primary color', 'open-nineteen' ),
 			'section' => 'colors',
 			'type'    => 'checkbox',
 		)
