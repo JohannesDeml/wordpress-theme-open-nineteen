@@ -1,9 +1,9 @@
 ![Preview Screenshot Open Nineteen](./screenshot.png)
-> Current Version [1.4.2](../../releases/)
+> Current Version [1.4.2](../../releases/latest)
 
 # Introduction
 
-The wordpress twentynineteen theme is a beautiful fully functional theme with gutenberg support. This repository is a standaolone fork of the theme with some design changes. This theme is ment for personal websites that should be light and elegant. [Example Website](https://deml.io)
+The wordpress [twentynineteen](https://wordpress.org/themes/twentynineteen/) theme is a beautiful fully functional theme with gutenberg support. This repository is a standaolone fork of the theme with some design changes. This theme is ment for personal light and elegant websites. [Example](https://deml.io)
 
 ### Implementation Decisions
 
@@ -15,13 +15,12 @@ The wordpress twentynineteen theme is a beautiful fully functional theme with gu
 ### Design Decisions
 
 * Use only one font: [Inter](https://rsms.me/inter/)
-* Support for varaible fonts keeps the font downloads small
+* Support for [variable fonts](https://en.wikipedia.org/wiki/Variable_fonts) keeps the font downloads small
 * Remove elements like previous and next entry
 * Remove author information
 * Get rid of oversized headings
 * Add of some additional css classes for easy styling
 * Match Preview image size for archive lists to text width to use less space for each entry
-
 
 ## Build Project
 
@@ -30,12 +29,10 @@ npm install
 npm run-script build
 ```
 
-## Todo
 
-* Add theme to [official wordpress themes](https://make.wordpress.org/themes/handbook/review/)
+## Licence
 
-## Additional Licences
-
+* [LICENSE](./LICENSE) - Open Nineteen Theme, © 2019-2020 Johannes Deml, GNU GPL
 * Twenty Nineteen WordPress Theme, © 2018 WordPress.org, GNU GPL
 * Inter Font, © 2016-2019 The Inter Project Authors (me@rsms.me), SIL OPEN FONT LICENSE Version 1.1
 * normalize.css, © 2012-2018 Nicolas Gallagher and Jonathan Neal, MIT
