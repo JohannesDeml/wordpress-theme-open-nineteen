@@ -117,6 +117,17 @@
 /* Ensure all font family declarations come with non-latin fallbacks */
 @mixin font-family( $font_family: $font__body ) {
 	font-family: $font_family;
+	@supports (font-variation-settings: normal) {
+		font-family: $font__body_var;
+	}
+	@extend %non-latin-fonts;
+}
+
+@mixin font-family( $font_family: $font__heading ) {
+	font-family: $font_family;
+	@supports (font-variation-settings: normal) {
+		font-family: $font__heading_var;
+	}
 	@extend %non-latin-fonts;
 }
 
