@@ -1,5 +1,5 @@
 ![Preview Screenshot Open Nineteen](./screenshot.png)
-> Current Version [1.4.1](../../releases/)
+> Current Version [1.4.2](../../releases/)
 
 # Introduction
 
@@ -10,10 +10,12 @@ The wordpress twentynineteen theme is a beautiful fully functional theme with gu
 * Create a standalone repository to enable easy maintanance and forkability for the theme
 * Keep an extra branch vanilla-twentynineteen to merge changes from the parent theme
 * Use npm with build scripts as the [wordpress main repo](https://github.com/WordPress/wordpress-develop), to support easy access and scss.
+* No dependencies to google fonts or alike, focus on privacy
 
 ### Design Decisions
 
 * Use only one font: [Inter](https://rsms.me/inter/)
+* Support for varaible fonts keeps the font downloads small
 * Remove elements like previous and next entry
 * Remove author information
 * Get rid of oversized headings
@@ -30,7 +32,6 @@ npm run-script build
 
 ## Todo
 
-* Use variable inter font when supported
 * Add theme to [official wordpress themes](https://make.wordpress.org/themes/handbook/review/)
 
 ## Additional Licences
