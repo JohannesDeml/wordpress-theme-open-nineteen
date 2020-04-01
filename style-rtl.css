@@ -4,8 +4,9 @@ Theme Name: Open Nineteen
 Theme URI: https://github.com/JohannesDeml/wordpress-theme-open-nineteen
 Author: Johannes Deml
 Author URI: https://deml.io
-Description: This theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
+Description: his theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
 Requires at least: WordPress 4.9.6
+Requires PHP: 5.2.4
 Version: 1.5.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -15,7 +16,7 @@ Tags: blog, one-column, flexible-header, accessibility-ready, custom-colors, cus
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Twenty Nineteen (the theme open nineteen is derived from) is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Twenty Nineteen (the theme this one is derived from) is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -2896,8 +2897,7 @@ body.page .main-navigation {
   background: transparent;
   color: inherit;
   cursor: pointer;
-  transition: background 250ms ease-in-out,
- transform 150ms ease;
+  transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
