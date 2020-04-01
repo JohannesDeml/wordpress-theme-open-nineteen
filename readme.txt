@@ -4,7 +4,7 @@ Tags: blog, one-column, flexible-header, accessibility-ready, custom-colors, cus
 Requires at least: 4.9.6
 Tested up to: WordPress 5.0
 Requires PHP: 5.2.4
-Stable tag: 1.4.2
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,11 @@ This theme is made so everyone can easily modify and improve it: [Github](https:
 * All the features you love from twentynineteen and more!
 
 == Changelog ==
+
+= 1.5.0 =
+* Released: April 1, 2020
+
+[Release notes 1.5.0](https://github.com/JohannesDeml/wordpress-theme-open-nineteen/releases/tag/1.5.0)
 
 = 1.4.2 =
 * Released: March 12, 2020

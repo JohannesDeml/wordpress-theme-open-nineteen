@@ -6,7 +6,8 @@ Author: Johannes Deml
 Author URI: https://deml.io
 Description: his theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
 Requires at least: WordPress 4.9.6
-Version: 1.4.2
+Requires PHP: 5.2.4
+Version: 1.5.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: opennineteen
@@ -2896,7 +2897,8 @@ body.page .main-navigation {
   background: transparent;
   color: inherit;
   cursor: pointer;
-  transition: background 250ms ease-in-out, transform 150ms ease;
+  transition: background 250ms ease-in-out,
+ transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
