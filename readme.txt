@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Open nineteen is an open source theme for lightweight, clean blogs and protfolios with support for gutenberg blocks.
 
 == Description ==
-his theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
+This theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
 
 This theme is made so everyone can easily modify and improve it: [Github](https://github.com/JohannesDeml/wordpress-theme-open-nineteen)
 

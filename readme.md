@@ -1,5 +1,5 @@
 ![Preview Screenshot Open Nineteen](./screenshot.png)
-> Current Version [1.4.2](../../releases/latest)
+> Current Version [1.5.0](../../releases/latest)
 
 # Introduction
 
@@ -24,11 +24,10 @@ The wordpress [twentynineteen](https://wordpress.org/themes/twentynineteen/) the
 
 ## Build Project
 
-```
+```shell
 npm install
 npm run-script build
 ```
-
 
 ## Licence
 
