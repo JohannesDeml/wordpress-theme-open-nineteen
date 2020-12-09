@@ -7,7 +7,7 @@ Author URI: https://deml.io
 Description: This theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
 Requires at least: WordPress 4.9.6
 Requires PHP: 5.2.4
-Version: 1.5.0
+Version: 1.8
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: opennineteen
@@ -21,6 +21,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+Bundled block pattern images:
+Abstract Background by HD Wallpapers, CC0. https://stocksnap.io/photo/abstract-background-0SRRVNMKBX
+Abstract Waves by HD Wallpapers, CC0. https://stocksnap.io/photo/abstract-waves-0KREGLTZQ3
+Abstract Bokeh by HD Wallpapers, CC0. https://stocksnap.io/photo/abstract-bokeh-P4KVZBMQ6L
+Colorful Bokeh by HD Wallpapers, CC0. https://stocksnap.io/photo/colorful-bokeh-VN4G84GL8H
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -3058,7 +3064,7 @@ body.page .main-navigation {
   line-height: 1.2;
   text-shadow: none;
   padding: calc( .5 * 1rem) calc( 24px + 1rem) calc( .5 * 1rem) 1rem;
-  white-space: nowrap;
+  max-width: 20rem;
 }
 
 .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
@@ -4704,6 +4710,15 @@ body.page .main-navigation {
   width: 1em;
 }
 
+.comments-area .comments-title-wrap .comments-title.has-text-align-center:before {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comments-area .comments-title-wrap .comments-title.has-text-align-right:before {
+  margin-left: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .comments-area .comments-title-wrap .comments-title {
     flex: 1 0 calc(3 * (100vw / 12));
@@ -5220,6 +5235,10 @@ body.page .main-navigation {
 .widget {
   margin: 0 0 1rem;
   /* Make sure select elements fit in widgets. */
+}
+
+.widget .widget-title {
+  font-size: 1.25em;
 }
 
 .widget select {
@@ -5812,6 +5831,12 @@ body.page .main-navigation {
   }
 }
 
+@-moz-document url-prefix() {
+  .entry .entry-content .has-drop-cap:not(:focus):first-letter {
+    margin-top: 0.2em;
+  }
+}
+
 .entry .entry-content .wp-block-pullquote {
   border-color: transparent;
   border-width: 2px;
@@ -6215,6 +6240,25 @@ body.page .main-navigation {
   text-align: left;
   /* Remove duplicate rule-line when a separator
 		 * is followed by an H1, or H2 */
+}
+
+.entry .entry-content .wp-block-separator:not(.wp-block-separator),
+.entry .entry-content hr:not(.wp-block-separator) {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry .entry-content .wp-block-separator:not(.wp-block-separator),
+  .entry .entry-content hr:not(.wp-block-separator) {
+    max-width: calc(8 * (100vw / 12) - 28px);
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .entry .entry-content .wp-block-separator:not(.wp-block-separator),
+  .entry .entry-content hr:not(.wp-block-separator) {
+    max-width: calc(6 * (100vw / 12) - 28px);
+  }
 }
 
 .entry .entry-content .wp-block-separator.is-style-wide,
