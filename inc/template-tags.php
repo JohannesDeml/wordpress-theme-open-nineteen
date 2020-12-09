@@ -91,9 +91,9 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 				); // WPCS: XSS OK.
 			}
 
-			/* translators: used between list items, there is a space after the comma. */
-			$tags_list = get_the_tag_list( '', __( ', ', 'open-nineteen' ) );
-			if ( $tags_list ) {
+			/* translators: Used between list items, there is a space after the comma. */
+			$tags_list = get_the_tag_list( '', __( ', ', 'twentynineteen' ) );
+			if ( $tags_list && ! is_wp_error( $tags_list ) ) {
 				printf(
 					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */
 					'<span class="tags-links">%1$s<span class="screen-reader-text">%2$s </span>%3$s</span>',
