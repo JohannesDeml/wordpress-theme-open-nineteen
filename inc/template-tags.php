@@ -92,7 +92,7 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 			}
 
 			/* translators: Used between list items, there is a space after the comma. */
-			$tags_list = get_the_tag_list( '', __( ', ', 'twentynineteen' ) );
+			$tags_list = get_the_tag_list( '', __( ', ', 'open-nineteen' ) );
 			if ( $tags_list && ! is_wp_error( $tags_list ) ) {
 				printf(
 					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */

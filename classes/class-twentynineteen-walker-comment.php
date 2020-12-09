@@ -75,7 +75,7 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 					<div class="comment-metadata">
 						<?php
 						/* translators: 1: Comment date, 2: Comment time. */
-						$comment_timestamp = sprintf( __( '%1$s at %2$s', 'twentynineteen' ), get_comment_date( '', $comment ), get_comment_time() );
+						$comment_timestamp = sprintf( __( '%1$s at %2$s', 'open-nineteen' ), get_comment_date( '', $comment ), get_comment_time() );
 
 						printf(
 							'<a href="%s"><time datetime="%s" title="%s">%s</time></a>',
@@ -86,7 +86,7 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 						);
 
 						$edit_comment_icon = twentynineteen_get_icon_svg( 'edit', 16 );
-						edit_comment_link( __( 'Edit', 'twentynineteen' ), ' <span class="edit-link-sep">&mdash;</span> <span class="edit-link">' . $edit_comment_icon, '</span>' );
+						edit_comment_link( __( 'Edit', 'open-nineteen' ), ' <span class="edit-link-sep">&mdash;</span> <span class="edit-link">' . $edit_comment_icon, '</span>' );
 						?>
 					</div><!-- .comment-metadata -->
 
@@ -96,7 +96,7 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 						$moderation_note = __( 'Your comment is awaiting moderation.', 'open-nineteen' );
 					} else {
 						$moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'open-nineteen' );
-						$moderation_note = __( 'Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved.', 'twentynineteen' );
+						$moderation_note = __( 'Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved.', 'open-nineteen' );
 					}
 					?>
 
