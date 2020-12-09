@@ -1,5 +1,5 @@
 ![Preview Screenshot Open Nineteen](./screenshot.png)
-> Current Version [1.5.0](../../releases/latest)
+> Current Version [1.8.0](../../releases/latest)
 
 # Introduction
 
