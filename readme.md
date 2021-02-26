@@ -26,7 +26,7 @@ The wordpress [twentynineteen](https://wordpress.org/themes/twentynineteen/) the
 
 ```shell
 npm install
-npm run-script build
+npm run build
 ```
 
 ## Licence

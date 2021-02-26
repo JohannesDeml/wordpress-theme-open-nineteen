@@ -7,7 +7,7 @@ Author URI: https://deml.io
 Description: This theme builds on the shoulders of Twenty Nineteen, but tries to achieve a cleaner look. Less clutter, fast loading times and privacy are the focus of open nineteen. It supports gutenberg blocks, has one sans serif font and is completly open source in its own repo on github.
 Requires at least: WordPress 4.9.6
 Requires PHP: 5.2.4
-Version: 1.8
+Version: 1.9
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: opennineteen
@@ -5053,6 +5053,10 @@ body.page .main-navigation {
   }
 }
 
+.comment-form #wp-comment-cookies-consent {
+  margin: 0 0 0 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email {
@@ -5970,7 +5974,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-quote p {
   font-size: 1em;
   font-style: normal;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .entry .entry-content .wp-block-quote cite {
