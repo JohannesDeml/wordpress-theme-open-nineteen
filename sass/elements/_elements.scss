@@ -2,12 +2,11 @@ html {
 	box-sizing: border-box;
 }
 
-::-moz-selection {
-	background-color: $color__background_selection;
-}
-
 ::selection {
-	background-color: $color__background_selection;
+	background-color: #fff600;
+}
+::-moz-selection {
+	background-color: #fff600;
 }
 
 *,

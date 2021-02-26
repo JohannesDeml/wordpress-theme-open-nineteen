@@ -494,7 +494,7 @@
 		p {
 			font-size: 1em;
 			font-style: normal;
-			line-height: 1.8;
+			line-height: $font__line-height-body;
 		}
 
 		cite {
@@ -545,9 +545,9 @@
 			display: block;
 		}
 
-		// If an image does not have a left/center/right alignment, 
-		// it's a direct child of .wp-block-img.  If it has no other 
-		// alignment added, we want to make sure the image does not 
+		// If an image does not have a left/center/right alignment,
+		// it's a direct child of .wp-block-img.  If it has no other
+		// alignment added, we want to make sure the image does not
 		// extend beyond the width of the text column.
 		&:not(.alignwide):not(.alignfull) > img {
 			@include postContentMaxWidth();
@@ -827,7 +827,7 @@
 	//! Group
 	.wp-block-group {
 
-		// When the Group block is standard/wide, we need to prevent full-aligned 
+		// When the Group block is standard/wide, we need to prevent full-aligned
 		// child blocks from expanding out of their container.
 		&:not(.alignfull) > .wp-block-group__inner-container > .alignfull,
 		&:not(.alignfull) > .wp-block-group__inner-container > .wp-block-image > img {
@@ -868,7 +868,7 @@
 				}
 			}
 
-			// If the Group block is full-width, it does not need this extra padding. 
+			// If the Group block is full-width, it does not need this extra padding.
 			&.alignfull {
 				padding-left: 0;
 				padding-right: 0;
@@ -883,7 +883,7 @@
 			&:not(.alignfull) > .wp-block-group__inner-container > .alignfull {
 				width: 100%;
 				max-width: 100%;
-				
+
 				@include media(tablet) {
 					width: calc( 100% + #{$size__spacing-unit * 2} );
 					max-width: calc( 100% + #{$size__spacing-unit * 2} );
@@ -891,7 +891,7 @@
 				}
 			}
 		}
-		
+
 	}
 
 	//! Latest Comments
@@ -1047,13 +1047,13 @@
 .dark-background-gradient {
 	color: $color__text-bright;
 	background-color: rgba(0,0,0,0.92);
-	background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 2%, rgba(0,0,0,0.8) 7%, rgba(0,0,0,0.8) 93%, rgba(0,0,0,0.85) 98%, rgba(0,0,0,0.9) 100%); 
+	background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 2%, rgba(0,0,0,0.8) 7%, rgba(0,0,0,0.8) 93%, rgba(0,0,0,0.85) 98%, rgba(0,0,0,0.9) 100%);
 }
 
 .light-background-gradient {
 	color: $color__text-dark;
 	background-color: rgba(0,0,0,0.03);
-	background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.05) 2%, rgba(0,0,0,0.03) 7%, rgba(0,0,0,0.03) 93%, rgba(0,0,0,0.05) 98%, rgba(0,0,0,0.08) 100%); 
+	background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.05) 2%, rgba(0,0,0,0.03) 7%, rgba(0,0,0,0.03) 93%, rgba(0,0,0,0.05) 98%, rgba(0,0,0,0.08) 100%);
 }
 
 .project-info {
@@ -1088,7 +1088,7 @@ ul.list-style-none {
 		font-weight: 400;
 		padding-left: 1.5rem;
 		margin-bottom: 12px;
-		
+
 		ul {
 			list-style-type: none;
 			font-weight: 100;
