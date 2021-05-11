@@ -1,5 +1,5 @@
 ![Preview Screenshot Open Nineteen](./screenshot.png)
-> Current Version [1.8.0](../../releases/latest)
+> [Current Version](../../releases/latest)
 
 # Introduction
 
@@ -28,6 +28,9 @@ The wordpress [twentynineteen](https://wordpress.org/themes/twentynineteen/) the
 npm install
 npm run build
 ```
+
+## Contribute
+Let's push this together to have an open community version of twentynineteen. Post and issue or create a PR, I'm happy to discuss any changes.
 
 ## Licence
 
