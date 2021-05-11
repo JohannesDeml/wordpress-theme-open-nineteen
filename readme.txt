@@ -2,8 +2,8 @@
 Contributors: wordpressdotorg, Johannes Deml
 Tags: blog, one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.9.6
-Tested up to: 5.6
-Stable tag: 1.9
+Tested up to: 5.7
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,20 +32,60 @@ This theme is made so everyone can easily modify and improve it: [Github](https:
 
 == Changelog ==
 
-= 1.8.0 =
-* Released: December 9, 2020
+= 2.0 =
+* Released: March 9, 2021
 
-[Release notes 1.5.0](https://github.com/JohannesDeml/wordpress-theme-open-nineteen/releases/tag/1.5.0)
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_2.0
 
-= 1.5.0 =
-* Released: April 1, 2020
+= 1.9 =
+* Released: December 22, 2020
 
-[Release notes 1.5.0](https://github.com/JohannesDeml/wordpress-theme-open-nineteen/releases/tag/1.5.0)
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.9
 
-= 1.4.2 =
-* Released: March 12, 2020
+= 1.8 =
+* Released: December 8, 2020
 
-[Release notes 1.4.2](https://github.com/JohannesDeml/wordpress-theme-open-nineteen/releases/tag/1.4.2)
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.8
+
+= 1.7 =
+* Released: August 11, 2020
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.7
+
+= 1.6 =
+* Released: June 10, 2020
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.6
+
+= 1.5 =
+* Released: March 31, 2020
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.5
+
+= 1.4 =
+* Released: May 7, 2019
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.4
+
+= 1.3 =
+* Released: February 21, 2019
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.3
+
+= 1.2 =
+* Released: January 9, 2019
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.2
+
+= 1.1 =
+* Released: December 19, 2018
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_1.1
+
+= 1.0 =
+* Released: December 6, 2018
+
+Initial release
 
 == Resources ==
 * Twenty Nineteen WordPress Theme, © 2018 WordPress.org, GNU GPL
