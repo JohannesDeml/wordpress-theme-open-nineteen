@@ -274,6 +274,11 @@
 
 		document.addEventListener('focus', function(event) {
 
+			if(event.target !== 'undefined') {
+				// Happens on firefox when refocussing the website
+				return;
+			}
+
 			if ( event.target.matches('.main-navigation > div > ul > li a') ) {
 
 				// Remove Focused elements in sibling div.
