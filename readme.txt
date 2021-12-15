@@ -2,8 +2,8 @@
 Contributors: wordpressdotorg, Johannes Deml
 Tags: blog, one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.9.6
-Tested up to: 5.7
-Stable tag: 2.0.1
+Tested up to: 5.8
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,11 @@ This theme is made so everyone can easily modify and improve it: [Github](https:
 * All the features you love from twentynineteen and more!
 
 == Changelog ==
+
+= 2.1 =
+* Released: July 20, 2021
+
+https://codex.wordpress.org/Twenty_Nineteen_Theme_Changelog#Version_2.1
 
 = 2.0 =
 * Released: March 9, 2021
