@@ -1,6 +1,10 @@
 ![Preview Screenshot Open Nineteen](./screenshot.png)
 > [Current Version](../../releases/latest)
 
+# Deprecation note ⚠
+
+Seems like the general interest on the project was quite low and since I'm moving away from the theme now as well, I will archive the repo now. It worked fine until the end, but since the theme is not customizable through the gutenberg blocks (you can still use them in posts and pages, just not for the theme itself), this theme is missing out on cool new features that were added to wordpress in the last years.
+
 # Introduction
 
 The wordpress [twentynineteen](https://wordpress.org/themes/twentynineteen/) theme is a beautiful fully functional theme with gutenberg support. This repository is a standaolone fork of the theme with some design changes. This theme is ment for personal light and elegant websites. [Example](https://deml.io)
